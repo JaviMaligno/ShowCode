@@ -1,0 +1,19 @@
+<Trades>
+
+<Trade id='1' base='GBP' amount='10000'><FX quote='USD' rate='1.3629' /><FX quote='YEN' rate='154.68' /></Trade>
+
+<Trade id='2' base='GBP' amount='560000'><FX quote='EUR' rate='1.1796' /><FX quote='USD' rate='1.3629' /></Trade>
+
+<Trade id='3' base='GBP' amount='2000000'><FX quote='ZAR' rate='20.24' /><FX quote='AUD' rate='1.85' /></Trade>
+
+<Trade id='4' base='GBP' amount='143800'><FX quote='EUR' rate='1.1796' /><FX quote='ZAR' rate='20.24' /></Trade>
+
+<Trade id='5' base='GBP' amount='67050'><FX quote='YEN' rate='154.68' /><FX quote='ZAR' rate='20.24' /></Trade>
+
+<Trade id='6' base='GBP' amount='999999.98'><FX quote='EUR' rate='1.1796' /><FX quote='YEN' rate='154.68' /></Trade>
+
+<Trade id='7' base='GBP' amount='500.63'><FX quote='AUD' rate='1.85' /><FX quote='ZAR' rate='20.24' /></Trade>
+
+<Trade id='8' base='GBP' amount='1800230'><FX quote='AUD' rate='1.85' /><FX quote='YEN' rate='154.68' /></Trade>
+
+<Trades>
