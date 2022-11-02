@@ -4,7 +4,6 @@ from fileinput import filename
 class Solution:
 
     def handle_file(self, fileName):
-        # Your code goes here
         fileName = self.reverse_brace(fileName)
         fileName = self.shift_bracket(fileName, brackets='()')
         fileName = self.shift_bracket(fileName, brackets='<>')
@@ -31,6 +30,8 @@ class Solution:
     
     @staticmethod
     def bracketing(string, brackets = '()'):
+        """Returns a stack whose elements are pairs of the form (d, (start,end))
+            where d is the amount of brackets surrounding the characters in the range (start,end)"""
         stack = []
         for i, c in enumerate(string):
             if c == brackets[0]:
@@ -41,6 +42,7 @@ class Solution:
     
     @staticmethod
     def reverse(string):
+        """Reverses string but fixing brackets"""
         brackets = ['(', ')', '<', '>', '{', '}']
         listSample=list(string)
         i=0
@@ -62,6 +64,7 @@ class Solution:
         
     @staticmethod
     def caesar(text, s):
+        """Applies caesar cipher to letters of the English alphabet"""
         result = ''
         for i in range(len(text)):
             char = text[i]

@@ -1,7 +1,6 @@
 class Solution:
 
     def verifypr(self, PR):
-        # Your code goes here
         if not PR:
             return False
         
@@ -11,10 +10,10 @@ class Solution:
             
         sn_list = []    
         
-        return all(self.check_sn(commit, sn_list) and self.check_msg(commit) and self.check_hash(commit) for commit in commits )
+        return all(self.check_sn(commit, sn_list = sn_list) and self.check_msg(commit) and self.check_hash(commit) for commit in commits )
 
     @staticmethod            
-    def check_sn(commit, sn_list):
+    def check_sn(commit, sn_list = []):
         try:
             sn = int(commit[0],16)
             if sn_list:
@@ -40,12 +39,14 @@ class Solution:
             code = msg[2]
             return self.check_ticket(ticket) and self.check_type(c_type) and self.check_code(code)
         else:
+            #We are allowing negative numbers
             if not msg[0]:
                 ticket = '-'+msg[1]
                 c_type = msg[2]
                 code = msg[3:]
                 return self.check_ticket(ticket, negative = True) and self.check_type(c_type) and self.check_code(code)
             else:
+                #We are also allowing hyphens in the commit message
                 ticket = msg[0]
                 c_type = msg[1]
                 code = msg[2:]
