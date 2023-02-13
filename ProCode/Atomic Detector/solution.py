@@ -13,7 +13,7 @@ class Detector:
         initial_time=0
         initial_energy = energy_readings[initial_time]
         next_energy = energy_readings[initial_time+1]
-        while initial_energy == next_energy and initial_time < time-1:
+        while initial_energy == next_energy and initial_time < time-2:
             initial_time += 1
             initial_energy = energy_readings[initial_time]
             next_energy = energy_readings[initial_time+1]
