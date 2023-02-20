@@ -44,5 +44,9 @@ class NetworkTests(unittest.TestCase):
         result = Network()
         self.assertEqual(result.nodes_visited(12, 3, [ 10, 1 ]), 10)
 
+    def test1(self):
+        result = Network()
+        self.assertEqual(result.nodes_visited(106, 55, [65,2,2,99,101,101,100,101]), 106)
+
 if __name__ == '__main__':
     unittest.main()
