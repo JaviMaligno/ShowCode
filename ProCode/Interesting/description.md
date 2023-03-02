@@ -1,0 +1,3 @@
+# Description
+
+You've started your own company which compares different interest rates by different banks. Given a list of interest rates, return the index (0-indexed) of the highest value interest rate over 365 days. Each interest rate is a string given by 3 comma-seperated values: the percentage increase as a float, the number of days between each interest application and either a C or S denoting compound or simple interest (compound interest applies interest on the accumulated interest whereas simple only applies on the initial investment).
